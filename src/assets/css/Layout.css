@@ -1,4 +1,16 @@
+.header-css {
+    height: 10vh;
+}
+.main-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    user-select: none;
+}
 .footer-grid {
+    height: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

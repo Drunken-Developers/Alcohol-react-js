@@ -1,5 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import "./assets/css/Layout.css"
+
 const Layout = () => {
     const navigate = useNavigate();
     const goBack = () => {
@@ -19,14 +20,14 @@ const Layout = () => {
     };
     return (
         <div>
-            <header style={{ background: 'lightgray', padding: 16, fontSize: 24 }}>
+            <header className="header-css" style={{ background: 'lightgray', fontSize: 24 }}>
                 <button style={{ position: 'left'}} onClick={goBack}>back</button>
                 <button style={{ position: 'right'}} onClick={goSearch}>search</button>
             </header>
-            <main>
+            <main className="main-layout">
                 <Outlet />
             </main>
-            <footer className="footer-grid" style={{ background: 'lightgray', padding: 16, fontSize: 24 }}>
+            <footer className="footer-grid" style={{ background: 'lightgray', fontSize: 24 }}>
                 <button onClick={goMain}>홈</button>
                 <button onClick={goCommunity}>커뮤니티</button>
                 <button onClick={goSearch}>검색</button>

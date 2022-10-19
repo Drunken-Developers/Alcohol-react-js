@@ -1,6 +1,7 @@
 import React from "react";
 
-const Nav = (props) => {
+// const Nav = (props) => {
+function Nav(props) {
     const lis = [];
     for (let i = 0; i < props.topics.length; i ++) {
         let t = props.topics[i];
@@ -20,7 +21,7 @@ const Nav = (props) => {
     }
     return (
         <nav>
-            <ol>{lis}</ol>
+            <div>{lis}</div>
         </nav>
     );
 }

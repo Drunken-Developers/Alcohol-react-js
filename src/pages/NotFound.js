@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 const NotFound = () => {
     const goBack = () => {
-        Navigate(-1);
+        Navigate('/');
     };
     return (
         <div

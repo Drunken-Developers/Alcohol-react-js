@@ -11,9 +11,10 @@ const Article = () => {
 };
 
 // const Article = (props) => {
+// function Article(props) {
 //     return (
 //         <article>
-//             <h2>{props.title}</h2>
+//             <div>{props.title}</div>
 //             {props.body}
 //         </article>
 //     );

@@ -1,12 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Article from "./Article";
-import Write from "./Write";
-import Nav from "./Nav";
-import { Button } from "bootstrap";
+// import Write from "./Write";
+// import Nav from "./Nav";
+// import { Button } from "bootstrap";
 
-const Community = () => {
-    // const [mode, setMode] = useState ();
+// function Community() {
+    // const [mode, setMode] = useState ('FIRSTPAGE');
     // const [id, setId] = useState(null);
     // const [nextId, setNextId] = useState();
     // const [topics, setTopics] = useState([
@@ -15,7 +16,9 @@ const Community = () => {
     //     { id: 3, title: 'third', body: 'third content is ...' },
     //     ]);
     //     let content = null;
-    //     if(mode === 'READ') {
+    //     if(mode === 'FIRSTPAGE') {
+    //          content = <Article title="커뮤니티" body="커뮤니티 입니다"></Article>;
+    //      } else if(mode === 'READ') {
     //     let title, body = null;
     //     for (let i = 0; i < topics.length; i++) {
     //         console.log(topics[i].id, id);
@@ -63,34 +66,42 @@ const Community = () => {
     //     </div>
     // );
     
-
+const Community = () => {
     return (
         <div>
             <Outlet />
-            <ul>
+            <div>
                 <ArticleItem id={1} />
                 <ArticleItem id={2} />
                 <ArticleItem id={3} />
-            </ul>
+            </div>
             <NavLink to={'/write'}>
                 <button>글쓰기</button>
             </NavLink>
         </div>
     );
 };
+//     return (
+//         <div>
+//             <Nav topics={topics} />
+//             {/* {content} */}
+//         </div>
+//     )
+// };
 
+// 게시글 목록 보여주는 함수
 const ArticleItem = ({ id }) => {
     const activeStyle = {
         color: 'green',
         fontSize: 21,
     };
-
+        // 글 리스트 출력
     return (
-        <li>
+        <div>
             <NavLink to={`/community/${id}`} style={({ isActive }) => (isActive ? activeStyle : undefined)}>
                 {id}번 게시글
             </NavLink>
-        </li>
+        </div>
     );
 };
 
