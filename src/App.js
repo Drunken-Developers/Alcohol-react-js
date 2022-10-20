@@ -8,6 +8,7 @@ import Article from './pages/Community/Article';
 import Write from './pages/Community/Write';
 import Search from './pages/Search/Search';
 import MyPage from './pages/Mypage/MyPage';
+import MyPageContent from './pages/Mypage/MyPageContent';
 const App = () => {
   return (
     <Routes>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/write' element={<Write />} />
         <Route path='/search' element={<Search />} />
         <Route path='/mypage' element={<MyPage />} />
+          <Route path=':id' element={<MyPageContent />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

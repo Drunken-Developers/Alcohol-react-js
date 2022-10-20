@@ -1,7 +1,8 @@
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const NotFound = () => {
-    const goBack = () => {
-        Navigate('/');
+    const navigate = useNavigate();
+    const goRoot = () => {
+        navigate('/');
     };
     return (
         <div
@@ -16,7 +17,7 @@ const NotFound = () => {
         }}
         >
             404 Page is not exist
-            <button onClick={goBack}>back</button>
+            <button onClick={goRoot}>back</button>
         </div>
     );
 };
