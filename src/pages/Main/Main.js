@@ -1,11 +1,13 @@
 import Community from "../Community/Community";
 import Recommend from "./Recommend";
+import CommunityList from "../Community/CommunityList";
+import AppBar from "../../components/Common/AppBar/AppBar";
 const Main = () => {
     return (
         <div>
-            <div>메인 화면</div>
+            <AppBar />
             <div><Recommend /></div>
-            <div><Community /></div>
+            <div><CommunityList  /></div>
         </div>
     );
 };
