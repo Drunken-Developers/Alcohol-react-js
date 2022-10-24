@@ -1,0 +1,9 @@
+.board_card{
+    border: 1px solid black;
+    width:90vw;
+    border-radius: 3px;
+    margin:10px 0px;
+}
+.mainHeader{
+    text-align: right;
+}
