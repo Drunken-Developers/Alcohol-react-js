@@ -5,7 +5,7 @@ const MyPageContent = () => {
     return (
         <div>
             <h2>{ content }</h2>
-            <p>내용을 입력하세요. {id}</p>
+            <p>{ content } 화면 입니다.</p>
         </div>
     );
 };

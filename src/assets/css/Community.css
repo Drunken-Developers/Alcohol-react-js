@@ -1,0 +1,13 @@
+.board-table {
+    width: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 0;
+}
+.board-table-row:hover {
+    background-color: #eceaea;
+    cursor: pointer;
+}
+.board-table-column {
+    padding: 10px 5px;
+}

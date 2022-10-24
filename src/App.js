@@ -20,7 +20,9 @@ const App = () => {
         <Route path='/write' element={<Write />} />
         <Route path='/search' element={<Search />} />
         <Route path='/mypage' element={<MyPage />} />
-          <Route path=':id' element={<MyPageContent />} />
+        <Route path='/mypagecontent' element={<MyPageContent />}>
+          <Route path=':content' element={<MyPageContent />} />
+          </Route>
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
