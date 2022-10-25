@@ -1,13 +1,12 @@
-import Community from "../Community/Community";
 import Recommend from "./Recommend";
-import "../../assets/css/Main.css"
-
+import CommunityList from "../Community/CommunityList";
+import AppBar from "../../components/Common/AppBar/AppBar";
 const Main = () => {
     return (
         <div>
-            {/* <div>메인 화면</div> */}
-            <div className="main-recomnmend"><Recommend /></div>
-            <div className="main-community"><Community /></div>
+            <AppBar />
+            <div><Recommend /></div>
+            <div><CommunityList  /></div>
         </div>
     );
 };

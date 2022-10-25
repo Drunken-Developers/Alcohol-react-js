@@ -1,5 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import "./assets/css/Layout.css"
+import "../assets/css/Layout.css"
+import AppBar from "../components/Common/AppBar/AppBar";
 
 const Layout = () => {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Layout = () => {
         navigate('/');
     };
     const goCommunity = () => {
-        navigate('/community');
+        navigate('/communityList');
     };
     const goSearch = () => {
         navigate('/search');
@@ -20,10 +21,11 @@ const Layout = () => {
     };
     return (
         <div>
-            <header className="header-css" style={{ background: 'lightgray', fontSize: 24 }}>
-                <button style={{ position: 'left'}} onClick={goBack}>back</button>
-                <button style={{ position: 'right'}} onClick={goSearch}>search</button>
-            </header>
+
+            {/*<header className="header-css" style={{ background: 'lightgray', fontSize: 24 }}>*/}
+            {/*    <button style={{ position: 'left'}} onClick={goBack}>back</button>*/}
+            {/*    <button style={{ position: 'right'}} onClick={goSearch}>search</button>*/}
+            {/*</header>*/}
             <main className="main-layout">
                 <Outlet />
             </main>
