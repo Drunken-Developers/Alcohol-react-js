@@ -1,13 +1,9 @@
-.board-table {
-    width: 80vh;
-    margin: 0 auto;
-    text-align: center;
-    border-spacing: 0;
+.board_card{
+    border: 1px solid black;
+    width:90vw;
+    border-radius: 3px;
+    margin:10px 0 10px 5vw;
 }
-.board-table-row:hover {
-    background-color: #eceaea;
-    cursor: pointer;
-}
-.board-table-column {
-    padding: 10px 5px;
+.mainHeader{
+    text-align: right;
 }

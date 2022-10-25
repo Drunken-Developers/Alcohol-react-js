@@ -4,7 +4,7 @@ const MyPageContent = () => {
     const { id, content } = useParams();
     return (
         <div>
-            <h2>{ content }</h2>
+            <div>{ content }</div>
             <p>{ content } 화면 입니다.</p>
         </div>
     );
