@@ -10,15 +10,15 @@ import Search from './pages/search/Search';
 import MyPage from './pages/mypage/MyPage';
 import MyPageContent from './pages/mypage/MyPageContent';
 import CommunityList from "./pages/community/CommunityList";
+import CommunityContent from "./pages/community/CommunityContent";
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path='/community-list' element={<CommunityList />}>
-          <Route path=':id' element={<Article />} />
-        </Route>
+        <Route path='/community-list' element={<CommunityList />} />
+        <Route path='/community-list/:id' element={<CommunityContent />} />
         <Route path='/write' element={<Write />} />
         <Route path='/search' element={<Search />} />
         <Route path='/mypage' element={<MyPage />} />
