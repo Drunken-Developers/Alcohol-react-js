@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import "../assets/css/Layout.css"
-import AppBar from "../components/common/AppBar/AppBar.js";
+import AppBar from "../components/common/app-bar/AppBar.js";
 
 const Layout = () => {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Layout = () => {
         navigate('/');
     };
     const goCommunity = () => {
-        navigate('/communityList');
+        navigate('/community-list');
     };
     const goSearch = () => {
         navigate('/search');

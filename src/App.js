@@ -1,22 +1,22 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Main from './pages/Main/Main';
+import Main from './pages/main/Main';
 import Layout from './pages/Layout';
 import NotFound from './pages/NotFound';
-import Community from './pages/Community/Community';
-import Article from './pages/Community/Article';
-import Write from './pages/Community/Write';
-import Search from './pages/Search/Search';
-import MyPage from './pages/Mypage/MyPage';
-import MyPageContent from './pages/Mypage/MyPageContent';
-import CommunityList from "./pages/Community/CommunityList";
+import Community from './pages/community/Community';
+import Article from './pages/community/Article';
+import Write from './pages/community/Write';
+import Search from './pages/search/Search';
+import MyPage from './pages/mypage/MyPage';
+import MyPageContent from './pages/mypage/MyPageContent';
+import CommunityList from "./pages/community/CommunityList";
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path='/communityList' element={<CommunityList />}>
+        <Route path='/community-list' element={<CommunityList />}>
           <Route path=':id' element={<Article />} />
         </Route>
         <Route path='/write' element={<Write />} />

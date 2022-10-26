@@ -1,6 +1,6 @@
-import Community from "../Community/Community";
+import Community from "../community/Community";
 import Recommend from "./Recommend";
-import CommunityList from "../Community/CommunityList";
+import CommunityList from "../community/CommunityList";
 const Main = () => {
     return (
         <div>
