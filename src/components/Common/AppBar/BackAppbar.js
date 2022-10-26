@@ -7,8 +7,8 @@ export default function BackAppbar(){
         history(-1)
     }
     return (
-    <div>
+    <>
         <MdKeyboardArrowLeft size={40} onClick={goBack} />
-    </div>
+    </>
     )
 }

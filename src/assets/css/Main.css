@@ -1,0 +1,11 @@
+.main-recommend{
+    margin-top: 10vh;
+    height: 30vh;
+    flex: auto;
+}
+
+.main-community{
+    margin-left: 5vh;
+    height: 50vh;
+    flex: auto;
+}

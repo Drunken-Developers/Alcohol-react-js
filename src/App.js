@@ -8,6 +8,7 @@ import Article from './pages/Community/Article';
 import Write from './pages/Community/Write';
 import Search from './pages/Search/Search';
 import MyPage from './pages/Mypage/MyPage';
+import MyPageContent from './pages/Mypage/MyPageContent';
 import CommunityList from "./pages/Community/CommunityList";
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
         <Route path='/write' element={<Write />} />
         <Route path='/search' element={<Search />} />
         <Route path='/mypage' element={<MyPage />} />
+        <Route path='/mypagecontent' element={<MyPageContent />}>
+          <Route path=':content' element={<MyPageContent />} />
+          </Route>
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

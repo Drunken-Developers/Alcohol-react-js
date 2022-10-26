@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import "../assets/css/Layout.css"
-import AppBar from "../components/Common/AppBar/AppBar";
+import AppBar from "../components/common/AppBar/AppBar.js";
 
 const Layout = () => {
     const navigate = useNavigate();
@@ -19,13 +19,12 @@ const Layout = () => {
     const goMypage = () => {
         navigate('/mypage');
     };
+    
     return (
         <div>
-
-            {/*<header className="header-css" style={{ background: 'lightgray', fontSize: 24 }}>*/}
-            {/*    <button style={{ position: 'left'}} onClick={goBack}>back</button>*/}
-            {/*    <button style={{ position: 'right'}} onClick={goSearch}>search</button>*/}
-            {/*</header>*/}
+            <header className="header-css">
+                <AppBar />
+            </header>
             <main className="main-layout">
                 <Outlet />
             </main>
