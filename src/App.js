@@ -17,8 +17,9 @@ const App = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path='/community-list' element={<CommunityList />} />
-        <Route path='/community-list/:id' element={<CommunityContent />} />
+        <Route path='/community-list' element={<CommunityList />}>
+        <Route path=':id' element={<CommunityContent />} />
+        </Route>
         <Route path='/write' element={<Write />} />
         <Route path='/search' element={<Search />} />
         <Route path='/mypage' element={<MyPage />} />
