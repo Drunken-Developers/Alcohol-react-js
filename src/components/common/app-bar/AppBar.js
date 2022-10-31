@@ -25,7 +25,7 @@ export default function AppBar({variant}){
         )
     } else if(location.pathname == '/search') {
         return(
-            <HeaderDefault />
+            <BackAppbar />
         )
     } else if(location.pathname == '/mypage') {
         return(
