@@ -1,6 +1,8 @@
 
 import BoardCard from "../../components/common/BoardCard.js";
 import {Outlet} from "react-router-dom";
+import dummy from "../../db/CommunityList.json"
+import BoardCardContent from "../../components/common/BoardCardContent.js";
 
 export default function CommunityList(){
     return (
