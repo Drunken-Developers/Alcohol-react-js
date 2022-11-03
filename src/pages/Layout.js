@@ -21,11 +21,11 @@ const Layout = () => {
     };
     
     return (
-        <div>
+        <>
             <header className="header-css">
                 <AppBar />
             </header>
-            <main className="main-layout">
+            <main className="main-layout" id='scrollbar'>
                 <Outlet />
             </main>
             <footer className="footer-grid" style={{ background: 'lightgray', fontSize: 24 }}>
@@ -34,7 +34,7 @@ const Layout = () => {
                 <button onClick={goSearch}>검색</button>
                 <button onClick={goMypage}>마이페이지</button>
             </footer>
-        </div>
+        </>
     );
 };
 
