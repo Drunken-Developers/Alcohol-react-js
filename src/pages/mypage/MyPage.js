@@ -1,7 +1,18 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-
+import { Navigate, NavLink, Outlet } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import { isLogout } from '../../redux/action';
+import { useDispatch } from 'react-redux' 
 const MyPage = () => {
+    // const isLogin = false;
+    // redux를 통해 Login에서 올바른 Id, Pw를 입력 및 데이터와 일치하는 경우 isLogin = true 설정
+    const disPath = useDispatch();
+    const value = useSelector((store) => store.value);
+    console.log(value)
+
+    if (value == false) {
+        return <Navigate to="/login" replace={true} />;
+    }
     return (
         <div>
             <Outlet />
@@ -12,7 +23,7 @@ const MyPage = () => {
                 <MyPageItem id={4} content='관심 있는 술' />
                 <MyPageItem id={5} content='북마크' />
                 <MyPageItem id={6} content='임시저장 글' />
-                <MyPageItem id={7} content='로그아웃' /> 
+                <button onClick={ () => {disPath(isLogout()) }}>로그아웃</button>
             </div>
         </div>
     );

@@ -2,15 +2,18 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Main from './pages/main/Main';
 import Layout from './pages/Layout';
-import NotFound from './pages/NotFound';
 import Community from './pages/community/Community';
 import Article from './pages/community/Article';
 import Write from './pages/community/Write';
 import Search from './pages/search/Search';
+import SearchPage from './pages/search/SearchPage';
 import MyPage from './pages/mypage/MyPage';
 import MyPageContent from './pages/mypage/MyPageContent';
-import CommunityList from "./pages/community/CommunityList";
-import CommunityContent from "./pages/community/CommunityContent";
+import Login from './pages/mypage/login/Login';
+import CommunityList from './pages/community/CommunityList';
+import CommunityContent from './pages/community/CommunityContent';
+import NotFound from './pages/NotFound';
+
 
 const App = () => {
   return (
@@ -21,7 +24,8 @@ const App = () => {
         <Route path=':id' element={<CommunityContent />} />
         </Route>
         <Route path='/write' element={<Write />} />
-        <Route path='/search' element={<Search />} />
+        <Route path='/search' element={<SearchPage />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/mypage' element={<MyPage />} />
         <Route path='/mypagecontent' element={<MyPageContent />}>
           <Route path=':content' element={<MyPageContent />} />
