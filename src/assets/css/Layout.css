@@ -1,16 +1,23 @@
 .header-css {
-    height: 10vh;
+    height: 5vh;
 }
 .main-layout{
-    /*display: flex;*/
+    height: 88vh;
+    overflow-y: scroll;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
     user-select: none;
+    /*스크롤기능은 하지만 스크롤이 안보이도록*/
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /*파이어 폭스*/
+}
+/*스크롤기능은 하지만 스크롤이 안보이도록*/
+.main-layout::-webkit-scrollbar{
+    display: none;
 }
 .footer-grid {
-    height: 10vh;
+    height: 7vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+}

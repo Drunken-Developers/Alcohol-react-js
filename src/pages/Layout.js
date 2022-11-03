@@ -21,7 +21,7 @@ const Layout = () => {
     };
     
     return (
-        <div>
+        <>
             <header className="header-css">
                 <AppBar />
             </header>
@@ -34,7 +34,7 @@ const Layout = () => {
                 <button onClick={goSearch}>검색</button>
                 <button onClick={goMypage}>마이페이지</button>
             </footer>
-        </div>
+        </>
     );
 };
 
