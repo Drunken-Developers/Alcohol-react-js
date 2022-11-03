@@ -7,3 +7,11 @@
 .mainHeader{
     text-align: right;
 }
+.write-btn{
+    position: sticky;
+    bottom: 1vh;
+    text-align: right;
+}
+.write-btn button{
+    margin-right: 10px;
+}
