@@ -1,8 +1,11 @@
 export const isLogin = () => ({
     type: "LOGIN",
-    value: true
+    value: true,
+    layoutDisplay: '마이페이지'
 });
 export const isLogout = () => ({
     type: "LOGOUT",
-    value: false
+    value: false,
+    layoutDisplay: '로그인'
+
 });

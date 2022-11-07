@@ -16,7 +16,7 @@ const MyPage = () => {
     return (
         <div>
             <Outlet />
-            <div style={{display: 'grid'}}>
+            <div>
                 <MyPageItem id={1} content={'내 정보'} />
                 <MyPageItem id={2} content='작성 글 & 리뷰' />
                 <MyPageItem id={3} content='공지 사항' />
