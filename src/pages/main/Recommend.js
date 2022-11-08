@@ -26,7 +26,7 @@ function Recommend() {
     // 게시글로 이동하는 함수
     const navigate = useNavigate();
     const onClickImg = () => {
-        navigate(`/community/${current+1}`);
+        navigate(`/community-list/${current+1}`);
     };
 
     useEffect(() => {
