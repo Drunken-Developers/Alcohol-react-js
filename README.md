@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# 해롱(술 커뮤니티)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 개요
+
+술을 좋아하는 사람들에게 정보와 소통의 공간을 제공하기 위한 커뮤니티 웹 앱
 
 ## Available Scripts
 
